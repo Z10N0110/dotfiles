@@ -1,0 +1,20 @@
+[color]
+	ui = true
+[alias]
+    st = status -s
+    cm = commit
+    cma = commit --amend
+    br = branch -v
+    cp = cherry-pick
+    co = checkout
+    df = diff
+    dfc = diff --cached
+    l = log --oneline --decorate -12 --color
+    ll = log --oneline --decorate --color
+    lc = log --graph --color
+    rb = rebase
+    dci = dcommit
+    sbi = submodule init
+    sbu = submodule update
+    sbp = submodule foreach git pull
+    sbc = submodule foreach git co master
