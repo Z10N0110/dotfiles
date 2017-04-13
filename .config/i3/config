@@ -5,8 +5,9 @@ exec --no-startup-id xsetroot -solid "#1e1e1e"
 # compton mananger
 exec --no-startup-id compton --config ~/.compton.conf 
 
-# feh background wallpaper
-exec_always --no-startup-id feh --bg-fill ~/Blue-Squares-Abstract-Wallpaper.jpg
+# setup background wallpaper
+#exec_always --no-startup-id feh --bg-fill ~/Blue-Squares-Abstract-Wallpaper.jpg
+exec_always --no-startup-id ~/.scripts/bing_daily_wallpaper.py
 
 # notification-daemon
 # exec --no-startup-id dunst 
