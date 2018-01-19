@@ -42,6 +42,9 @@ source $ZSH/oh-my-zsh.sh
 # dircolors
 eval `dircolors ~/.dircolors`
 
+# additional env
+[[ -f ~/.env ]] && source ~/.env
+
 # alias
 source ~/.alias
 

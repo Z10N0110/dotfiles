@@ -1,0 +1,10 @@
+export GOPATH=$HOME/gopath
+export PATH=$PATH:$GOPATH/bin
+
+alias go="$hpsv go"
+alias dep="$hpsv dep"
+
+# for terraform
+export TF_PLUGIN_DEV=1
+
+# vim: ft=sh cms=#%s
