@@ -1,5 +1,5 @@
 [color]
-	ui = true
+     ui = true
 [alias]
     st = status -s
     cm = commit

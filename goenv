@@ -1,0 +1,4 @@
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+alias go="$hpsv go"
+alias dep="$hpsv dep"
