@@ -3,7 +3,7 @@ DEST=$HOME
 SELF_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 function basic() {
-    brew install jq tree zsh coreutils
+    brew install jq tree zsh coreutils lua luarocks
     if ! grep /usr/local/bin/zsh /etc/shells; then
       sudo echo '/usr/local/bin/zsh' >> /etc/shells
     fi
