@@ -48,7 +48,7 @@ set ffs=unix,dos,mac
 set formatoptions+=m  
 set formatoptions+=B  
 set bs=indent,eol,start		
-set viminfo='20,\"120	"read/write a .viminfo file, don't store more than 120 lines of registers
+set viminfo='20,\"520	"read/write a .viminfo file, don't store more than 520 lines of registers
 set whichwrap+=<,>,h,l  
 set wildignore=*.o,*~,*.pyc  
 set completeopt=longest,menu  
@@ -60,37 +60,18 @@ autocmd InsertLeave * se nocul
 autocmd InsertEnter * se cul    
 autocmd! bufwritepost .vimrc source % 
 autocmd FileType python set tabstop=4 shiftwidth=4 expandtab  
-autocmd FileType python set omnifunc=pythoncomplete#Complete  
 " Return to last edit position when opening files (You want this!)  
 autocmd BufReadPost *  
      \ if line("'\"") > 0 && line("'\"") <= line("$") |  
      \   exe "normal! g`\"" |  
      \ endif  
   
-"pydiction 1.2 python auto complete  
-let g:pydiction_location = '~/.vim/tools/pydiction/complete-dict'  
-"defalut g:pydiction_menu_height == 15  
-let g:pydiction_menu_height = 20   
-
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>  
 
-if &term=="xterm" || &term=="xterm-256-color" || &term=="xterm-termite"
+if &term=="xterm" || &term=="xterm-256-color"
      set t_Co=256
      set t_Sb=[4%dm
      set t_Sf=[3%dm
 endif
 
 colorscheme molokai
-
-"set t_Co=16  
-"set background=light  
-"set background=dark  
-"let g:solarized_termcolors=16
-"let g:solarized_termcolors=256
-"let g:solarized_termtrans=1
-"colorscheme solarized
-
-if &term=="xterm-termite"
-    highlight Normal ctermbg=None
-    highlight NonText ctermbg=None
-endif
