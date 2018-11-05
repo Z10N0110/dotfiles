@@ -1,5 +1,6 @@
 [color]
      ui = true
+
 [alias]
     st = status -s
     cm = commit
@@ -18,3 +19,10 @@
     sbu = submodule update
     sbp = submodule foreach git pull
     sbc = submodule foreach git co master
+
+[user]
+    name = Z10N0110
+    email = dungeoncog@outlook.com
+
+[include]
+    path = .gitconfig.users
