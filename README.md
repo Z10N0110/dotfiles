@@ -13,6 +13,8 @@ vai brew:
 - lua
 - luarocks
 - zsh
+- pyenv
+- pyenv-virtualenv
 
 via luarocks:
 
