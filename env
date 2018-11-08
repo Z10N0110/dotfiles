@@ -13,3 +13,6 @@ hpsv='http_proxy='$_http_proxy' https_proxy='$_https_proxy''
 
 # pyenv
 [[ -f ~/.pyenv ]] && source ~/.pyenv
+
+# work envs
+[[ -f ~/.workenv ]] && source ~/.workenv
