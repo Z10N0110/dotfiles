@@ -15,6 +15,7 @@ vai brew:
 - zsh
 - pyenv
 - pyenv-virtualenv
+- colordiff
 
 via luarocks:
 
