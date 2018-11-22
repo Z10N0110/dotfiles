@@ -54,7 +54,7 @@ end
 function uniq_update(chars, index, pw_table)
   while true do
     local char = random_character(chars)
-    if not is_exist(cahr, pw_table) then
+    if not is_exist(char, pw_table) then
       pw_table[index] = char
       return index + 1
     end
