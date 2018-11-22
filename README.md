@@ -16,6 +16,7 @@ vai brew:
 - pyenv
 - pyenv-virtualenv
 - colordiff
+- coreutils
 
 via luarocks:
 
