@@ -13,3 +13,6 @@ alias rdpswd='~/.scripts/rdpswd.lua'
 
 # set http proxys for git
 alias git="$hpsv git"
+
+# set http proxys for brew
+alias brew="$hpsv brew"
